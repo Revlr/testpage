@@ -1,9 +1,340 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test page.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-	test2
+  <div id="app">
+    <v-app>
+    	<v-app-bar
+    		fixed
+    		color="white"
+    		elevation=0
+    	>
+    		<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    		<v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer>
+    		<v-toolbar-title id="toolbar-title">
+    			<a href="file:///C:/Users/wj/Documents/%EC%9C%A4%EC%84%9D%EC%9D%B4%20%EC%9A%94%EC%B2%AD%20%ED%8E%98%EC%9D%B4%EC%A7%80/index.html" style="color: #e51f1f;">
+    				YOON THE MUSIC
+    			</a>
+    		</v-toolbar-title><v-spacer></v-spacer>
+    		<v-spacer></v-spacer>
+    		<v-btn icon href="https://www.facebook.com/profile.php?id=100005838844080">
+    			<v-icon>mdi-facebook</v-icon>
+    		</v-btn>
+    		<v-btn icon href="https://www.instagram.com/yssong_music/?hl=ko">
+    			<v-icon>mdi-instagram</v-icon>
+    		</v-btn>
+    		<v-btn icon href="mailto:yssong419@gmail.com">
+    			<v-icon>mdi-email</v-icon>
+    		</v-btn>
+    		<v-btn icon href="https://www.youtube.com/channel/UCYWryVbsQQaK7ABeG7i03nA?view_as=subscriber">
+    			<v-icon>mdi-youtube</v-icon>
+    		</v-btn>
+    		<v-divider vertical></v-divider>
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+    	</v-app-bar>
+    	<v-navigation-drawer
+	      v-model="drawer"
+	      fixed
+	      temporary
+	    >
+	    <v-layout justify-space-around column fill-height>
+	    	<v-spacer></v-spacer>
+	      <v-list
+	        nav
+	        dense
+	        justify-space-around
+	      >
+	        <v-list-item-group>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#container" style="color: #999;">
+	            		TOP
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#profile" style="color: #999;">
+	            		Profile
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#bio">
+	            		etc
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-spacer></v-spacer>
+	        </v-list-item-group>
+	      </v-list>
+	      <v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer>
+	    </v-layout>
+	    </v-navigation-drawer>
+    	<v-content>
+    		<v-card squared elevation="0"><br><br><br></v-card>
+    		<v-container id="container" xs10>
+    			<v-layout id="profile" justify-space-around row fill-height>
+    				<v-flex xs10 md6 pa-6>
+    					<v-img
+    						src="https://user-images.githubusercontent.com/33975225/157459075-7a014bbd-c017-4599-93c8-82a0ca99cf76.png"
+    						ma-1
+    					></v-img>
+    				</v-flex>
+    				<v-flex column xs10 md6 pa-12 style="font-size: 250%;">
+    					<v-card squared elevation="0" height="50%">
+    						Yoonsuk Song
+    					</v-card>
+    					<v-card squared elevation="0" height="50%">
+    						Composer for Game/Film/Media
+    					</v-card>
+    				</v-flex>
+    			</v-layout>
+    			<v-layout id="bio" justify-space-around row fill-height>
+    				<v-flex column xs10 md6 py-8 px-4>
+    					<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+    						Bio
+    					</v-card>
+    					<v-card squared elevation="0" height="50%" style="font-size: 133%; letter-spacing: .01em; line-height: 1.3em;">
+    						Yoonsuk Song is a music composer  for Game, Film, and Commercial. Yoonsuk has  produced many music for various purposes and experienced in sequencing, recording , composing, song writing, and audio production at a various level. He is very passionate in putting strong energy into his music and makes it sound real.<br><br>
+								He  was born in Seoul, South Korea. He has never quit creating music by being a guitarist since high school. Then, he moved to Orlando to expand his experiences and  study Music Production program in <strong>Full Sail University. </strong><br><br>
+								He spent his time in <strong>Los Angeles,</strong> worked for many great composers (such as <strong>Gerard K. Marino</strong> a.k.a composer of  God of War games) as an assistant music composer, created music and sound design  for  many media using programs (Logic Pro, Pro Tools, Cubase, Sibelius, Unity, Wwise, and F Mod Studio).
+    					</v-card>
+    				</v-flex>
+    				<v-flex xs10 md6 pa-6>
+    					<v-img
+    						src="https://user-images.githubusercontent.com/33975225/157459057-d35cb3c4-c3ff-4f16-9ac5-28924c6d4e8a.jpeg"
+    					></v-img>
+    				</v-flex>
+    			</v-layout>
+    			<v-divider></v-divider>
+    			<v-layout id="sound-redesign" column py-12 justify-space-around>
+    				<v-flex justify-center py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					Sound ReDesign
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kmVes6qrmpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Halo - Reach Redesigning of all sound and music
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+    			</v-layout>
+    			<v-divider></v-divider>
+    			<v-layout id="games" column py-12 justify-space-around>
+    				<v-flex justify-center py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					Games
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrpqUauv4Pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Angry Bots - Using Unity & Wwise
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TPYBpU0ak6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					2D Platformer - Using Unity & Wwise
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYoEe0baKUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Endless Car Chase - Using  Unity & F Mod Studio
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+    			</v-layout>
+    			<v-divider></v-divider>
+    			<v-layout id="film-commercial" column py-12 justify-space-around>
+    				<v-flex justify-center py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					Film & Commercial
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3fbvBPCBZ5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					No soul required
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/5rfx-Ydb7EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Single X energy drink
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IgWt5hSgSy0?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Fastest Seat in Sports
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+    			</v-layout>
+    			<v-divider></v-divider>
+    			<v-layout id="instrumental" column py-12 justify-space-around>
+    				<v-flex justify-center py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					Instrumental
+	    				</v-card>
+	    			</v-flex>
+	    			<v-divider></v-divider>
+	    			<v-flex column pa-12>
+	    				<v-card squared elevation="0" height="600">
+	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/t1Ko9HrgQ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				</v-card>
+	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+	    					<br><br><br>
+	    					Canon Rock-Rearrange & Instrumental
+	    					<br>
+	    				</v-card>
+	    			</v-flex>
+    			</v-layout>
+    			<v-divider></v-divider>
+    			<v-layout id="tracks" column class="py-12" justify-space-around>
+    				<v-flex align-center justify-space-around py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					Tracks
+	    				</v-card>
+	    			</v-flex>
+    				<v-divider></v-divider>
+    				<br><br><br>
+    				<v-row no-gutters>
+				      <v-col
+				        v-for="n in 4"
+				        :key="n"
+				        cols="12"
+				        sm="12"
+				        md="6"
+				        lg="4"
+				        xl="3"
+				      >
+				        <v-card
+				          class="pa-2"
+				          squared
+				          elevation="0"
+				        >
+					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
+		    						<h3>The Last Hope</h3>
+		    						<p>Yoonsuk Song</p>
+		    						<audio autoplay controls>
+		    							<source src="The Last Hope.wav" type="audio/mp3">
+		    						</audio>
+		    					</v-card>
+				        </v-card>
+				      </v-col>
+				    </v-row>
+    			</v-layout>
+    			<v-layout id="contact" column py-12 justify-space-around>
+    				<v-flex justify-center py-12>
+	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
+	    					CONTACT
+	    				</v-card>
+	    			</v-flex>
+    				<v-divider></v-divider>
+    				<v-flex>
+    					<v-card squared elevation="0" style="font-size: 133%;text-align: center">
+				    		<br><br><br><br><br><br>
+    						<v-btn icon color="primary" href="https://www.facebook.com/profile.php?id=100005838844080">
+				    			<v-icon>mdi-facebook</v-icon>
+				    		</v-btn>
+				    		<v-btn icon color="pink" href="https://www.instagram.com/yssong_music/?hl=ko">
+				    			<v-icon>mdi-instagram</v-icon>
+				    		</v-btn>
+				    		<v-btn icon color="black" href="mailto:yssong419@gmail.com">
+				    			<v-icon>mdi-email</v-icon>
+				    		</v-btn>
+				    		<v-btn icon color="red" href="https://www.youtube.com/channel/UCYWryVbsQQaK7ABeG7i03nA?view_as=subscriber">
+				    			<v-icon>mdi-youtube</v-icon>
+				    		</v-btn>
+    					</v-card>
+    				</v-flex>
+    			</v-layout>
+    		</v-container>
+    	</v-content>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data: () => ({
+	      drawer: false,
+	      group: null,
+	    }),
+	    watch: {
+	      group () {
+	        this.drawer = false
+	      },
+	    },
+    })
+  </script>
+  <style type="text/css">
+  	#toolbar-title{
+  		font-size: 15px;
+  		font-family: Roboto Mono;
+	    font-weight: 400;
+	    font-style: normal;
+  	}
+  	#container{
+  		font-family: alegreya;
+	    font-weight: 400;
+	    font-style: italic;
+  	}
+  	a{
+  		text-decoration-line: none;
+  		text-decoration:none;
+  	}
+
+  </style>
 </body>
 </html>
