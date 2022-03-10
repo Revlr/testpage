@@ -20,7 +20,7 @@
     		<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     		<v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer>
     		<v-toolbar-title id="toolbar-title">
-    			<a href="/" style="color: #e51f1f;">
+    			<a href="." style="color: #e51f1f;">
     				YOON THE MUSIC
     			</a>
     		</v-toolbar-title><v-spacer></v-spacer>
@@ -126,7 +126,7 @@
 	    </v-navigation-drawer>
     	<v-content>
     		<v-card squared elevation="0"><br><br><br></v-card>
-    		<v-container id="top" xs10>
+    		<v-container id="top">
     			<v-layout id="profile" justify-space-around row fill-height>
     				<v-flex xs10 md6 pa-6>
     					<v-img
@@ -167,8 +167,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kmVes6qrmpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kmVes6qrmpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -186,8 +188,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrpqUauv4Pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrpqUauv4Pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -196,8 +200,10 @@
 	    				</v-card>
 	    			</v-flex>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TPYBpU0ak6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TPYBpU0ak6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -206,8 +212,10 @@
 	    				</v-card>
 	    			</v-flex>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYoEe0baKUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYoEe0baKUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -225,8 +233,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3fbvBPCBZ5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3fbvBPCBZ5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -236,8 +246,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/5rfx-Ydb7EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/5rfx-Ydb7EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -247,8 +259,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IgWt5hSgSy0?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IgWt5hSgSy0?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -266,8 +280,10 @@
 	    			</v-flex>
 	    			<v-divider></v-divider>
 	    			<v-flex column pa-12>
-	    				<v-card squared elevation="0" height="600">
-	    					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/t1Ko9HrgQ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    				<v-card squared elevation="0">
+	    					<div class="video-wrap">
+	    						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/t1Ko9HrgQ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    					</div>
 	    				</v-card>
 	    				<v-card squared elevation="0" style="font-size: 133%;text-align: center">
 	    					<br><br><br>
@@ -303,7 +319,7 @@
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
 		    					<h3>{{i.song}}</h3>
 		    					<p>{{i.singer}}</p>
-		    					<audio autoplay controls controlsList="nodownload">
+		    					<audio controls controlsList="nodownload">
 		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
@@ -467,6 +483,10 @@
   		text-decoration-line: none;
   		text-decoration:none;
   	}
+  	.video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+	.video-wrap iframe,
+	.video-wrap object,
+	.video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
   </style>
 </body>
