@@ -20,23 +20,23 @@
     		<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     		<v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer>
     		<v-toolbar-title id="toolbar-title">
-    			<a href="file:///C:/Users/wj/Documents/%EC%9C%A4%EC%84%9D%EC%9D%B4%20%EC%9A%94%EC%B2%AD%20%ED%8E%98%EC%9D%B4%EC%A7%80/index.html" style="color: #e51f1f;">
+    			<a href="/" style="color: #e51f1f;">
     				YOON THE MUSIC
     			</a>
     		</v-toolbar-title><v-spacer></v-spacer>
     		<v-spacer></v-spacer>
-    		<v-btn icon href="https://www.facebook.com/profile.php?id=100005838844080">
-    			<v-icon>mdi-facebook</v-icon>
-    		</v-btn>
-    		<v-btn icon href="https://www.instagram.com/yssong_music/?hl=ko">
-    			<v-icon>mdi-instagram</v-icon>
-    		</v-btn>
-    		<v-btn icon href="mailto:yssong419@gmail.com">
-    			<v-icon>mdi-email</v-icon>
-    		</v-btn>
-    		<v-btn icon href="https://www.youtube.com/channel/UCYWryVbsQQaK7ABeG7i03nA?view_as=subscriber">
-    			<v-icon>mdi-youtube</v-icon>
-    		</v-btn>
+    		<v-btn icon color="primary" href="https://www.facebook.com/profile.php?id=100005838844080">
+				<v-icon>mdi-facebook</v-icon>
+			</v-btn>
+			<v-btn icon color="pink" href="https://www.instagram.com/yssong_music/?hl=ko">
+				<v-icon>mdi-instagram</v-icon>
+			</v-btn>
+			<v-btn icon color="black" href="mailto:yssong419@gmail.com">
+				<v-icon>mdi-email</v-icon>
+			</v-btn>
+			<v-btn icon color="red" href="https://www.youtube.com/channel/UCYWryVbsQQaK7ABeG7i03nA?view_as=subscriber">
+				<v-icon>mdi-youtube</v-icon>
+			</v-btn>
     		<v-divider vertical></v-divider>
         <v-btn icon>
           <v-icon>mdi-magnify</v-icon>
@@ -57,7 +57,7 @@
 	        <v-list-item-group>
 	          <v-list-item>
 	            <v-list-item-title style="text-align: center">
-	            	<a href="#container" style="color: #999;">
+	            	<a href="#top" style="color: #999;">
 	            		TOP
 	            	</a>
 	          	</v-list-item-title>
@@ -65,14 +65,56 @@
 	          <v-list-item>
 	            <v-list-item-title style="text-align: center">
 	            	<a href="#profile" style="color: #999;">
-	            		Profile
+	            		PROFILE
 	            	</a>
 	          	</v-list-item-title>
 	          </v-list-item>
 	          <v-list-item>
 	            <v-list-item-title style="text-align: center">
-	            	<a href="#bio">
-	            		etc
+	            	<a href="#bio" style="color: #999;">
+	            		BIO
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#sound-redesign" style="color: #999;">
+	            		SOUND REDESIGN
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#games" style="color: #999;">
+	            		GAMES
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#film-commercial" style="color: #999;">
+	            		FILM & COMMERCIAL
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#instrumental" style="color: #999;">
+	            		INSTRUMENTAL
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#tracks" style="color: #999;">
+	            		TRACKS
+	            	</a>
+	          	</v-list-item-title>
+	          </v-list-item>
+	          <v-list-item>
+	            <v-list-item-title style="text-align: center">
+	            	<a href="#contact" style="color: #999;">
+	            		CONTACT
 	            	</a>
 	          	</v-list-item-title>
 	          </v-list-item>
@@ -84,7 +126,7 @@
 	    </v-navigation-drawer>
     	<v-content>
     		<v-card squared elevation="0"><br><br><br></v-card>
-    		<v-container id="container" xs10>
+    		<v-container id="top" xs10>
     			<v-layout id="profile" justify-space-around row fill-height>
     				<v-flex xs10 md6 pa-6>
     					<v-img
@@ -107,9 +149,7 @@
     						Bio
     					</v-card>
     					<v-card squared elevation="0" height="50%" style="font-size: 133%; letter-spacing: .01em; line-height: 1.3em;">
-    						Yoonsuk Song is a music composer  for Game, Film, and Commercial. Yoonsuk has  produced many music for various purposes and experienced in sequencing, recording , composing, song writing, and audio production at a various level. He is very passionate in putting strong energy into his music and makes it sound real.<br><br>
-								He  was born in Seoul, South Korea. He has never quit creating music by being a guitarist since high school. Then, he moved to Orlando to expand his experiences and  study Music Production program in <strong>Full Sail University. </strong><br><br>
-								He spent his time in <strong>Los Angeles,</strong> worked for many great composers (such as <strong>Gerard K. Marino</strong> a.k.a composer of  God of War games) as an assistant music composer, created music and sound design  for  many media using programs (Logic Pro, Pro Tools, Cubase, Sibelius, Unity, Wwise, and F Mod Studio).
+    						Yoonsuk Song is a music composer  for Game, Film, and Commercial. Yoonsuk has  produced many music for various purposes and experienced in sequencing, recording , composing, song writing, and audio production at a various level. He is very passionate in putting strong energy into his music and makes it sound real.<br><br>He  was born in Seoul, South Korea. He has never quit creating music by being a guitarist since high school. Then, he moved to Orlando to expand his experiences and  study Music Production program in <strong>Full Sail University. </strong><br><br>He spent his time in <strong>Los Angeles,</strong> worked for many great composers (such as <strong>Gerard K. Marino</strong> a.k.a composer of  God of War games) as an assistant music composer, created music and sound design  for  many media using programs (Logic Pro, Pro Tools, Cubase, Sibelius, Unity, Wwise, and F Mod Studio).
     					</v-card>
     				</v-flex>
     				<v-flex xs10 md6 pa-6>
@@ -247,8 +287,8 @@
     				<br><br><br>
     				<v-row no-gutters>
 				      <v-col
-				        v-for="n in 4"
-				        :key="n"
+				        v-for="i in songs"
+				        :key="song"
 				        cols="12"
 				        sm="12"
 				        md="6"
@@ -261,16 +301,17 @@
 				          elevation="0"
 				        >
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
-		    						<h3>The Last Hope</h3>
-		    						<p>Yoonsuk Song</p>
-		    						<audio autoplay controls>
-		    							<source src="The Last Hope.wav" type="audio/mp3">
-		    						</audio>
-		    					</v-card>
+		    					<h3>{{i.song}}</h3>
+		    					<p>{{i.singer}}</p>
+		    					<audio autoplay controls controlsList="nodownload">
+		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    					</audio>
+		    				</v-card>
 				        </v-card>
 				      </v-col>
 				    </v-row>
     			</v-layout>
+    			<v-divider></v-divider>
     			<v-layout id="contact" column py-12 justify-space-around>
     				<v-flex justify-center py-12>
 	    				<v-card squared elevation="0" style="font-size: 250%;text-align: center">
@@ -280,7 +321,7 @@
     				<v-divider></v-divider>
     				<v-flex>
     					<v-card squared elevation="0" style="font-size: 133%;text-align: center">
-				    		<br><br><br><br><br><br>
+				    		<br><br><br>
     						<v-btn icon color="primary" href="https://www.facebook.com/profile.php?id=100005838844080">
 				    			<v-icon>mdi-facebook</v-icon>
 				    		</v-btn>
@@ -293,6 +334,7 @@
 				    		<v-btn icon color="red" href="https://www.youtube.com/channel/UCYWryVbsQQaK7ABeG7i03nA?view_as=subscriber">
 				    			<v-icon>mdi-youtube</v-icon>
 				    		</v-btn>
+				    		<br><br><br>
     					</v-card>
     				</v-flex>
     			</v-layout>
@@ -310,12 +352,103 @@
       data: () => ({
 	      drawer: false,
 	      group: null,
+	      songs: [
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "The Last Hope",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Marvelous opening",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Warrior Rises",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Yon Can't Run",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Born Wardogs",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Go Adventure!",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "The Fastival of Speed",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Chiptune_We are the guadians",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platfoemer loop 1",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platfoemer loop 2",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platfoemer loop 3",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Kill Da Gang",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Gang's swag",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Bochan Seo",
+	      		song : "Moon Light",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song, Jooyung Lee",
+	      		song : "Because We are",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Kid Contents_Wheels On The Bus(Remix)",
+	      		format : "wav"
+	      	},
+	      	//추가할 때 마다 아래걸로 추가하면 됨.
+	      	/*
+	      	{
+	      		singer : "만든사람 or 노래부른사람",
+	      		song : "노래 이름",
+	      		format : "wav or mp3"
+	      	},
+	      	*/
+	      ],
 	    }),
 	    watch: {
 	      group () {
 	        this.drawer = false
 	      },
 	    },
+
     })
   </script>
   <style type="text/css">
@@ -325,7 +458,7 @@
 	    font-weight: 400;
 	    font-style: normal;
   	}
-  	#container{
+  	#top{
   		font-family: alegreya;
 	    font-weight: 400;
 	    font-style: italic;
