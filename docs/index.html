@@ -392,6 +392,7 @@
 				        >
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
 		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload">
 		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
@@ -421,6 +422,7 @@
 				        >
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
 		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload">
 		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
@@ -440,6 +442,62 @@
 				        xs="12"
 				        sm="12"
 				        md="6"
+				      >
+				        <v-card
+				          class="pa-4 ma-4"
+				          squared
+				          color="#f6f6f6"
+				        >
+					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
+		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
+		    					<p>{{i.singer}}</p>
+		    					<audio controls controlsList="nodownload">
+		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    					</audio>
+		    				</v-card>
+				        </v-card>
+				      </v-col>
+				    </v-row>
+    				<br><br><br>
+    				<br><br><br>
+    				<br><br><br>
+    				<v-row no-gutters>
+				      <v-col
+				        v-for="i in genre4"
+				        :key="song"
+				        cols="12"
+				        xs="12"
+				        sm="12"
+				        md="6"
+				      >
+				        <v-card
+				          class="pa-4 ma-4"
+				          squared
+				          color="#f6f6f6"
+				        >
+					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
+		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
+		    					<p>{{i.singer}}</p>
+		    					<audio controls controlsList="nodownload">
+		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    					</audio>
+		    				</v-card>
+				        </v-card>
+				      </v-col>
+				    </v-row>
+    				<br><br><br>
+    				<br><br><br>
+    				<br><br><br>
+    				<v-row no-gutters>
+				      <v-col
+				        v-for="i in genre5"
+				        :key="song"
+				        cols="12"
+				        xs="12"
+				        sm="12"
+				        md="6"
 				        lg="4"
 				        xl="3"
 				      >
@@ -450,6 +508,35 @@
 				        >
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
 		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
+		    					<p>{{i.singer}}</p>
+		    					<audio controls controlsList="nodownload">
+		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    					</audio>
+		    				</v-card>
+				        </v-card>
+				      </v-col>
+				    </v-row>
+    				<br><br><br>
+    				<br><br><br>
+    				<br><br><br>
+    				<v-row no-gutters>
+				      <v-col
+				        v-for="i in genre6"
+				        :key="song"
+				        cols="12"
+				        xs="12"
+				        sm="12"
+				        md="6"
+				      >
+				        <v-card
+				          class="pa-4 ma-4"
+				          squared
+				          color="#f6f6f6"
+				        >
+					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
+		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload">
 		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
@@ -479,6 +566,7 @@
 				        >
 					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
 		    					<h4>{{i.song}}</h4>
+		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload">
 		    						<source :src="'https://github.com/Revlr/testpage/blob/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
@@ -533,75 +621,137 @@
 	      	{
 	      		singer : "Yoonsuk Song",
 	      		song : "The Last Hope",
+	      		genre : "(Orchestral - Epic)",
 	      		format : "wav"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
 	      		song : "Honor Beyond Death",
+	      		genre : "(Orchestral - Epic)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Final Stage",
+	      		genre : "(Orchestral - Epic)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "From the Battle Field",
+	      		genre : "(Orchestral - Epic)",
 	      		format : "wav"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
 	      		song : "Warrior Rises",
+	      		genre : "(Orchestral - Epic)",
 	      		format : "mp3"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
-	      		song : "Marvelous opening",
-	      		format : "wav"
-	      	},
-	      	{
-	      		singer : "Yoonsuk Song",
-	      		song : "Yon Can't Run",
-	      		format : "wav"
-	      	},
-	      	{
-	      		singer : "Yoonsuk Song",
-	      		song : "Born Wardogs",
-	      		format : "wav"
-	      	},
-	      	{
-	      		singer : "Yoonsuk Song",
-	      		song : "Go Adventure!",
+	      		song : "A New History",
+	      		genre : "(Orchestral - Epic)",
 	      		format : "wav"
 	      	},
 	      ],
 	      genre2: [
 	      	{
 	      		singer : "Yoonsuk Song",
-	      		song : "The Fastival of Speed",
+	      		song : "Marvelous opening",
+	      		genre : "(Orchestral - Cinematic)",
 	      		format : "wav"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
-	      		song : "Chiptune_We are the guadians",
+	      		song : "Voice in Dream",
+	      		genre : "(Orchestral - Horror)",
 	      		format : "wav"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
-	      		song : "2D Platformer loop 1",
-	      		format : "mp3"
-	      	},
-	      	{
-	      		singer : "Yoonsuk Song",
-	      		song : "2D Platformer loop 2",
-	      		format : "mp3"
-	      	},
-	      	{
-	      		singer : "Yoonsuk Song",
-	      		song : "2D Platformer loop 3",
-	      		format : "mp3"
+	      		song : "Yon Can't Run",
+	      		genre : "(Orchestral - Horror)",
+	      		format : "wav"
 	      	},
 	      ],
 	      genre3: [
 	      	{
 	      		singer : "Yoonsuk Song",
+	      		song : "Born Wardogs",
+	      		genre : "(Orchestral - World)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Desertification",
+	      		genre : "(Orchestral - World)",
+	      		format : "wav"
+	      	},
+	      ],
+	      genre4: [
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Gonna Swing You",
+	      		genre : "(Jazz - Swing)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Go Adventure!",
+	      		genre : "(Jazz - Rock)",
+	      		format : "wav"
+	      	},
+	      ],
+	      genre5: [
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Remix-Over Watch Medley",
+	      		genre : "(EDM)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "The Fastival of Speed",
+	      		genre : "(EDM)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Chiptune_We are the guadians",
+	      		genre : "(EDM)",
+	      		format : "wav"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platformer loop 1",
+	      		genre : "(EDM)",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platformer loop 2",
+	      		genre : "(EDM)",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "2D Platformer loop 3",
+	      		genre : "(EDM)",
+	      		format : "mp3"
+	      	},
+	      ],
+	      genre6: [
+	      	{
+	      		singer : "Yoonsuk Song",
 	      		song : "Kill Da Gang",
+	      		genre : "(HipHop)",
 	      		format : "wav"
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
 	      		song : "Gang's swag",
+	      		genre : "(HipHop)",
 	      		format : "wav"
 	      	},
 	      ],
