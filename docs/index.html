@@ -394,8 +394,8 @@
 		    					<h3>{{i.song}}</h3>
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
-		    					<audio controls controlsList="nodownload">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    					<audio controls controlsList="nodownload" preload="none">
+		    						<source :src="'/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
