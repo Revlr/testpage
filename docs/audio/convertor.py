@@ -3,9 +3,9 @@ import subprocess
 
 def convert_files_in_directory(directory):
     for filename in os.listdir(directory):
-        if filename.endswith("-.wav"):
+        if filename.endswith(".wav"):
             input_file = os.path.join(directory, filename)
-            output_file = os.path.join(directory, filename)
+            output_file = os.path.join(directory,"../docs/audio", filename)
             convert_to_mp3(input_file, output_file)
 
 def convert_to_mp3(input_file, output_file):

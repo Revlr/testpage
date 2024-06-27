@@ -395,7 +395,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://raw.githubusercontent.com/Revlr/testpage/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'">
+		    						<source :src="'https://raw.githubusercontent.com/Revlr/testpage/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -425,7 +425,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -453,7 +453,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -481,7 +481,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -511,7 +511,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -539,7 +539,35 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format+'?raw=true'" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
+		    					</audio>
+		    				</v-card>
+				        </v-card>
+				      </v-col>
+				    </v-row>
+    				<br><br><br>
+    				<br><br><br>
+    				<br><br><br>
+    				<v-row no-gutters>
+				      <v-col
+				        v-for="i in genre7"
+				        :key="song"
+				        cols="12"
+				        xs="12"
+				        sm="12"
+				        md="6"
+				      >
+				        <v-card
+				          class="pa-4 ma-4"
+				          squared
+				          color="#f6f6f6"
+				        >
+					        <v-card squared elevation="0" style="font-size: 133%;text-align: center">
+		    					<h3>{{i.song}}</h3>
+		    					<h5>{{i.genre}}</h5>
+		    					<p>{{i.singer}}</p>
+		    					<audio controls controlsList="nodownload" preload="none">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format+'?raw=true'" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -569,7 +597,7 @@
 		    					<h5>{{i.genre}}</h5>
 		    					<p>{{i.singer}}</p>
 		    					<audio controls controlsList="nodownload" preload="none">
-		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'-.'+i.format" type="audio/mp3">
+		    						<source :src="'https://github.com/Revlr/testpage/raw/main/docs/audio/'+i.song+'-'+i.singer+'.'+i.format" type="audio/mp3">
 		    					</audio>
 		    				</v-card>
 				        </v-card>
@@ -618,6 +646,12 @@
 	      drawer: false,
 	      group: null,
 	      genre1: [
+	      	{
+	      		singer : "Yoonsuk Song",
+	      		song : "Memory With A Hero",
+	      		genre : "(Orchestral - Epic)",
+	      		format : "wav"
+	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
 	      		song : "The Last Hope",
@@ -744,6 +778,12 @@
 	      genre6: [
 	      	{
 	      		singer : "Yoonsuk Song",
+	      		song : "Dreaming You",
+	      		genre : "(HipHop)",
+	      		format : "mp3"
+	      	},
+	      	{
+	      		singer : "Yoonsuk Song",
 	      		song : "Kill Da Gang",
 	      		genre : "(HipHop)",
 	      		format : "wav"
@@ -752,6 +792,14 @@
 	      		singer : "Yoonsuk Song",
 	      		song : "Gang's swag",
 	      		genre : "(HipHop)",
+	      		format : "wav"
+	      	},
+	      ],
+	      genre7: [
+	      	{
+	      		singer : "Yoonsuk Song, Nanoori",
+	      		song : "Queen",
+	      		genre : "(Epic Piano Medley)",
 	      		format : "wav"
 	      	},
 	      ],
@@ -768,7 +816,7 @@
 	      	},
 	      	{
 	      		singer : "Yoonsuk Song",
-	      		song : "Kid Contents_Wheels On The Bus(Remix)",
+	      		song : "Kid Contents_Wheels On The Bus",
 	      		format : "wav"
 	      	},
 	      	//추가할 때 마다 아래걸로 추가하면 됨.
